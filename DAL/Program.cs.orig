@@ -1,0 +1,124 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Model;
+
+
+namespace DAL {
+
+    public class Connexion {
+        const string connectionString = @"Data Source=751FJW2\SQLEXPRESS;" +
+                    "Initial Catalog=TP_Groupe4;" +
+                    "Integrated Security=True;" +
+                    "Connect Timeout=5";
+
+        public static void Using() {
+            using (SqlConnection connection = new SqlConnection(Connexion.connectionString) ) {
+                connection.Open();
+            }
+        }
+        public static List<User> LireUtilisateur()
+        {
+            List<User> liste = new List<User>();
+
+
+            using (SqlConnection conn = new SqlConnection(Connexion.connectionString)) {
+                conn.Open();
+
+                SqlCommand cmd = conn.CreateCommand();
+                cmd.CommandText = "SELECT * FROM Utilisateur";
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+
+                while (reader.Read())
+                {
+                    User us = new User();
+
+                    us.ID = (Int32)reader["ID"];
+                    us.Nom = (string)reader["Nom"];
+                    us.Couriel = (string)reader["Couriel"];
+                    us.Telephone = (string)reader["Telephone"];
+                    us.pass = (string)reader["MotDePasse"];
+                    liste.Add(us);
+                }
+            }
+
+            return liste;
+        }
+
+        public static List<Contact> LireContact()
+        {
+            List<Contact> liste = new List<Contact>();
+
+            using (SqlConnection conn = new SqlConnection(Connexion.connectionString))
+            {
+                conn.Open();
+
+                SqlCommand cmd = conn.CreateCommand();
+                cmd.CommandText = "SELECT * FROM Contact";
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+
+                while (reader.Read())
+                {
+                    Contact Co = new Contact();
+
+                    Co.nom = (string)reader["Nom"];
+                    Co.couriel = (string)reader["Couriel"];
+                    Co.telephone = (string)reader["Telephone"];
+                    Co.dateFete = reader["DateFete"] == DBNull.Value ? null : (DateTime?)reader["DateFete"];
+                  
+                    liste.Add(Co);
+                }
+            }
+
+            return liste;
+        }
+
+        public static List<Contact> LireContactSpecific(int idUtilisateur)
+        {
+            List<Contact> liste = new List<Contact>();
+
+            using (SqlConnection conn = new SqlConnection(Connexion.connectionString))
+            {
+                conn.Open();
+
+                SqlCommand cmd = conn.CreateCommand();
+                cmd.CommandText = "SELECT Nom AS 'Nom Complet',Couriel AS 'Courriel',Telephone AS 'Numero Telephone',DateFete AS 'Date de Naissance' FROM Contact WHERE UtilisateurID =" + idUtilisateur;
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+
+                while (reader.Read())
+                {
+                    Contact Co = new Contact();
+
+<<<<<<< HEAD
+                    Co.utilisateurID = (int)reader["UtilisateurID"];
+                    Co.nom = (string)reader["Nom"];
+                    Co.couriel = reader["Couriel"] == DBNull.Value ? null : (string)reader["Couriel"];
+                    Co.telephone = reader["Telephone"] == DBNull.Value ? null : (string)reader["Telephone"];
+                    Co.dateFete = reader["DateFete"] == DBNull.Value ? null : (DateTime?)reader["DateFete"];
+=======
+                    Co.nom = (string)reader["Nom Complet"];
+                    Co.couriel = (string)reader["Courriel"];
+                    Co.telephone = (string)reader["Numero Telephone"];
+                    Co.dateFete = reader["Date de Naissance"] == DBNull.Value ? null : (DateTime?)reader["Date de Naissance"];
+>>>>>>> 80d3e93d4c4d8b90efd4b7fd40cf307105b28143
+
+                    liste.Add(Co);
+                }
+            }
+
+            return liste;
+        }
+    }
+}
+
+
+    

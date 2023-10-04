@@ -1,0 +1,48 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+using Model;
+using BLL;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 80d3e93d4c4d8b90efd4b7fd40cf307105b28143
+namespace ProjetGroup4 {
+    /// <summary>
+    /// Interaction logic for Window1.xaml
+    /// </summary>
+    public partial class MenuPrincipale : Window {
+        User currentUser;
+
+        public MenuPrincipale(User cu) {
+            InitializeComponent();
+            this.currentUser = cu;
+            this.txtUserWelcome.Content = "Welcome ";    // + this.currentUser.Nom;
+            this.date.Content = "Date: " + DateTime.Now.ToString("ddd, dd MMM yyy");
+<<<<<<< HEAD
+            DG1.ItemsSource = ProgramBLL.LireEtAfficherTousLesContactSpecific(this.currentUser.ID);
+=======
+            this.DG1.ItemsSource = ProgramBLL.LireEtAfficherTousLesContactSpecific(1 /*this.currentUser.ID*/);
+>>>>>>> 80d3e93d4c4d8b90efd4b7fd40cf307105b28143
+        }
+
+        private void DG1_SelectionChanged(object sender, SelectionChangedEventArgs e) {
+
+        }
+        private void Btn_ExitAct(object sender, RoutedEventArgs e) {
+            Application.Current.Shutdown();
+        }
+        private void Btn_MinAct(object sender, RoutedEventArgs e) {
+        }
+    }
+}

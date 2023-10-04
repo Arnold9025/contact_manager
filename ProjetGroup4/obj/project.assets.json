@@ -1,0 +1,611 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.1": {
+      "MaterialDesignColors/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/MaterialDesignColors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignColors.dll": {}
+        }
+      },
+      "MaterialDesignThemes/4.7.0-ci364": {
+        "type": "package",
+        "build": {
+          "build/MaterialDesignThemes.targets": {}
+        }
+      },
+      "MaterialDesignThemes.Wpf/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "MaterialDesignColors": "1.0.1",
+          "Microsoft.CSharp": "4.6.0",
+          "System.Data.DataSetExtensions": "4.6.0-preview3.19128.7"
+        },
+        "compile": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.6.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Data.DataSetExtensions/4.6.0-preview3.19128.7": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data.DataSetExtensions"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "BLL/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "DAL": "1.0.0",
+          "Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BLL.dll": {}
+        }
+      },
+      "DAL/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DAL.dll": {}
+        }
+      },
+      "Model/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Model.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win": {
+      "MaterialDesignColors/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/MaterialDesignColors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignColors.dll": {}
+        }
+      },
+      "MaterialDesignThemes/4.7.0-ci364": {
+        "type": "package",
+        "build": {
+          "build/MaterialDesignThemes.targets": {}
+        }
+      },
+      "MaterialDesignThemes.Wpf/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "MaterialDesignColors": "1.0.1",
+          "Microsoft.CSharp": "4.6.0",
+          "System.Data.DataSetExtensions": "4.6.0-preview3.19128.7"
+        },
+        "compile": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.6.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Data.DataSetExtensions/4.6.0-preview3.19128.7": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data.DataSetExtensions"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "BLL/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "DAL": "1.0.0",
+          "Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BLL.dll": {}
+        }
+      },
+      "DAL/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DAL.dll": {}
+        }
+      },
+      "Model/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Model.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win-x64": {
+      "MaterialDesignColors/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/MaterialDesignColors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignColors.dll": {}
+        }
+      },
+      "MaterialDesignThemes/4.7.0-ci364": {
+        "type": "package",
+        "build": {
+          "build/MaterialDesignThemes.targets": {}
+        }
+      },
+      "MaterialDesignThemes.Wpf/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "MaterialDesignColors": "1.0.1",
+          "Microsoft.CSharp": "4.6.0",
+          "System.Data.DataSetExtensions": "4.6.0-preview3.19128.7"
+        },
+        "compile": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.6.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Data.DataSetExtensions/4.6.0-preview3.19128.7": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data.DataSetExtensions"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "BLL/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "DAL": "1.0.0",
+          "Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BLL.dll": {}
+        }
+      },
+      "DAL/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DAL.dll": {}
+        }
+      },
+      "Model/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Model.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win-x86": {
+      "MaterialDesignColors/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/MaterialDesignColors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignColors.dll": {}
+        }
+      },
+      "MaterialDesignThemes/4.7.0-ci364": {
+        "type": "package",
+        "build": {
+          "build/MaterialDesignThemes.targets": {}
+        }
+      },
+      "MaterialDesignThemes.Wpf/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "MaterialDesignColors": "1.0.1",
+          "Microsoft.CSharp": "4.6.0",
+          "System.Data.DataSetExtensions": "4.6.0-preview3.19128.7"
+        },
+        "compile": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.6.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Data.DataSetExtensions/4.6.0-preview3.19128.7": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data.DataSetExtensions"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "BLL/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "DAL": "1.0.0",
+          "Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BLL.dll": {}
+        }
+      },
+      "DAL/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DAL.dll": {}
+        }
+      },
+      "Model/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Model.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MaterialDesignColors/1.2.0": {
+      "sha512": "tWopwGZk6ScDgjEyDrJuKPtuIF3KUfXP5TRqd7M5QTL8Nq46AB/NHF9VZ5fMUBOlEGWroaJb6lwLG6rjm9+hFw==",
+      "type": "package",
+      "path": "materialdesigncolors/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/MaterialDesignColors.dll",
+        "lib/net45/MaterialDesignColors.pdb",
+        "materialdesigncolors.1.2.0.nupkg.sha512",
+        "materialdesigncolors.nuspec"
+      ]
+    },
+    "MaterialDesignThemes/4.7.0-ci364": {
+      "sha512": "2hP8Mv8aWN00VrKFVmahYrZX4r8OJTRqiSrWnZebniDvbx+s3/01hKSFaywDTkB1BtGleA3OS2jm631/Els6aA==",
+      "type": "package",
+      "path": "materialdesignthemes/4.7.0-ci364",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MaterialDesignThemes.targets",
+        "build/Resources/Roboto/Roboto-Black.ttf",
+        "build/Resources/Roboto/Roboto-BlackItalic.ttf",
+        "build/Resources/Roboto/Roboto-Bold.ttf",
+        "build/Resources/Roboto/Roboto-BoldItalic.ttf",
+        "build/Resources/Roboto/Roboto-Italic.ttf",
+        "build/Resources/Roboto/Roboto-Light.ttf",
+        "build/Resources/Roboto/Roboto-LightItalic.ttf",
+        "build/Resources/Roboto/Roboto-Medium.ttf",
+        "build/Resources/Roboto/Roboto-MediumItalic.ttf",
+        "build/Resources/Roboto/Roboto-Regular.ttf",
+        "build/Resources/Roboto/Roboto-Thin.ttf",
+        "build/Resources/Roboto/Roboto-ThinItalic.ttf",
+        "build/Resources/Roboto/RobotoCondensed-Bold.ttf",
+        "build/Resources/Roboto/RobotoCondensed-BoldItalic.ttf",
+        "build/Resources/Roboto/RobotoCondensed-Italic.ttf",
+        "build/Resources/Roboto/RobotoCondensed-Light.ttf",
+        "build/Resources/Roboto/RobotoCondensed-LightItalic.ttf",
+        "build/Resources/Roboto/RobotoCondensed-Regular.ttf",
+        "images/MaterialDesignThemes.Icon.png",
+        "lib/net462/MaterialDesignThemes.Wpf.dll",
+        "lib/net462/MaterialDesignThemes.Wpf.pdb",
+        "lib/net462/MaterialDesignThemes.Wpf.xml",
+        "lib/net6.0/MaterialDesignThemes.Wpf.dll",
+        "lib/net6.0/MaterialDesignThemes.Wpf.pdb",
+        "lib/net6.0/MaterialDesignThemes.Wpf.xml",
+        "lib/netcoreapp3.1/MaterialDesignThemes.Wpf.dll",
+        "lib/netcoreapp3.1/MaterialDesignThemes.Wpf.pdb",
+        "lib/netcoreapp3.1/MaterialDesignThemes.Wpf.xml",
+        "materialdesignthemes.4.7.0-ci364.nupkg.sha512",
+        "materialdesignthemes.nuspec",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "MaterialDesignThemes.Wpf/1.0.1": {
+      "sha512": "goEShYguOoPYJ+oBtWWMEsZFK5CL+524m2fekyLQaMkcECu2K9mYv0yJiXARQM6qr6YdF6iDuR0Bx9BunrLFzQ==",
+      "type": "package",
+      "path": "materialdesignthemes.wpf/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/MaterialDesignThemes.Wpf.dll",
+        "lib/netcoreapp3.0/MaterialDesignThemes.Wpf.dll",
+        "materialdesignthemes.wpf.1.0.1.nupkg.sha512",
+        "materialdesignthemes.wpf.nuspec"
+      ]
+    },
+    "Microsoft.CSharp/4.6.0": {
+      "sha512": "kxn3M2rnAGy5N5DgcIwcE8QTePWU/XiYcQVzn9HqTls2NKluVzVSmVWRjK7OUPWbljCXuZxHyhEz9kPRIQeXow==",
+      "type": "package",
+      "path": "microsoft.csharp/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.6.0.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/netcore50/de/Microsoft.CSharp.xml",
+        "ref/netcore50/es/Microsoft.CSharp.xml",
+        "ref/netcore50/fr/Microsoft.CSharp.xml",
+        "ref/netcore50/it/Microsoft.CSharp.xml",
+        "ref/netcore50/ja/Microsoft.CSharp.xml",
+        "ref/netcore50/ko/Microsoft.CSharp.xml",
+        "ref/netcore50/ru/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard1.0/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Data.DataSetExtensions/4.6.0-preview3.19128.7": {
+      "sha512": "ZFJYYi41Wf4xlFKuuRUblw8yThgzBTYeZTs7eGU7sDiu+X+BmeIdT3pstCrmLpDyflDIBuKX1VYmBCGKo14h6w==",
+      "type": "package",
+      "path": "system.data.datasetextensions/4.6.0-preview3.19128.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/_._",
+        "lib/netstandard2.0/System.Data.DataSetExtensions.dll",
+        "lib/netstandard2.0/System.Data.DataSetExtensions.xml",
+        "ref/net45/_._",
+        "ref/netstandard2.0/System.Data.DataSetExtensions.dll",
+        "system.data.datasetextensions.4.6.0-preview3.19128.7.nupkg.sha512",
+        "system.data.datasetextensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "BLL/1.0.0": {
+      "type": "project",
+      "path": "../BLL/BLL.csproj",
+      "msbuildProject": "../BLL/BLL.csproj"
+    },
+    "DAL/1.0.0": {
+      "type": "project",
+      "path": "../DAL/DAL.csproj",
+      "msbuildProject": "../DAL/DAL.csproj"
+    },
+    "Model/1.0.0": {
+      "type": "project",
+      "path": "../Model/Model.csproj",
+      "msbuildProject": "../Model/Model.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6.1": [
+      "BLL >= 1.0.0",
+      "MaterialDesignColors >= 1.2.0",
+      "MaterialDesignThemes >= 4.7.0-ci364",
+      "MaterialDesignThemes.Wpf >= 1.0.1",
+      "Model >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\isi.751FJW2\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\dev\\d05\\d05-a22-octobre-groupe4\\ProjetGroup4\\ProjetGroup4\\View.csproj",
+      "projectName": "View",
+      "projectPath": "C:\\dev\\d05\\d05-a22-octobre-groupe4\\ProjetGroup4\\ProjetGroup4\\View.csproj",
+      "packagesPath": "C:\\Users\\isi.751FJW2\\.nuget\\packages\\",
+      "outputPath": "C:\\dev\\d05\\d05-a22-octobre-groupe4\\ProjetGroup4\\ProjetGroup4\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\isi.751FJW2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net461"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net461": {
+          "projectReferences": {
+            "C:\\dev\\d05\\d05-a22-octobre-groupe4\\ProjetGroup4\\BLL\\BLL.csproj": {
+              "projectPath": "C:\\dev\\d05\\d05-a22-octobre-groupe4\\ProjetGroup4\\BLL\\BLL.csproj"
+            },
+            "C:\\dev\\d05\\d05-a22-octobre-groupe4\\ProjetGroup4\\Model\\Model.csproj": {
+              "projectPath": "C:\\dev\\d05\\d05-a22-octobre-groupe4\\ProjetGroup4\\Model\\Model.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net461": {
+        "dependencies": {
+          "MaterialDesignColors": {
+            "target": "Package",
+            "version": "[1.2.0, )"
+          },
+          "MaterialDesignThemes": {
+            "target": "Package",
+            "version": "[4.7.0-ci364, )"
+          },
+          "MaterialDesignThemes.Wpf": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

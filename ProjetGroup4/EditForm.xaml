@@ -1,0 +1,65 @@
+﻿<Window x:Class="ProjetGroup4.EditForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjetGroup4"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="EditForm" Height="450" Width="800">
+    <Grid Background="#090032">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="500"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0.1,0.5" EndPoint="0.9,0.5">
+                    <GradientStop Color="#f63274" Offset="1"></GradientStop>
+                    <GradientStop Color="#ee651a" Offset="0"></GradientStop>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+
+        <StackPanel  Grid.Column="1" Height="500" Width="800">
+
+            <Label Content="EDIT CONTACT" HorizontalAlignment="Left" Height="41"  VerticalAlignment="Top" Width="218" FontFamily="Montserrat" FontSize="25" Foreground="White" Margin="96,0,0,0"/>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Label Content="Nom Complet" Foreground="White"/>
+
+                <TextBox HorizontalAlignment="Left" Style="{StaticResource txtField}"  TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160" Margin="90 0" x:Name="txt_Nom"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin=" 10 ">
+                <Label Content="adresse mail" HorizontalAlignment="Center" Foreground="White"/>
+                <TextBox HorizontalAlignment="Left" Style="{StaticResource txtField}"  TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160" Margin="100 0" x:Name="txt_adr"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin=" 10 ">
+
+                <Label Content="Numero de telephone" HorizontalAlignment="Center" Foreground="White"/>
+                <TextBox PreviewTextInput="TypeNumericValidation" HorizontalAlignment="Left" Style="{StaticResource txtField}"  TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Margin="50 0" x:Name="txt_tel"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin=" 10 ">
+
+                <Label Content="Date de naissance" HorizontalAlignment="Center" Foreground="White"/>
+
+                <DatePicker HorizontalAlignment="Left"  Margin="70,0" VerticalAlignment="Top" Width="142"  IsTodayHighlighted="True" Background="White" Opacity="0.9" x:Name="DateF"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin=" 10 ">
+                <Label Content="Relation" HorizontalAlignment="Center" Foreground="White"/>
+
+                <ComboBox Width="100" Background="White"  ItemsSource="{Binding Option}"  Margin="130 0" x:Name="txt_rel">
+
+                </ComboBox>
+            </StackPanel>
+            <Button Style="{StaticResource addButton}" HorizontalAlignment="Left" Margin=" 160 20" Click="Button_Click" >
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="Pen" VerticalAlignment="Center" Width="30" Height="30"/>
+                    <TextBlock Text="Edit Contact" VerticalAlignment="Center" FontFamily="Montserrat"/>
+                </StackPanel>
+            </Button>
+
+        </StackPanel>
+
+    </Grid>
+</Window>

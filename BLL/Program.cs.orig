@@ -1,0 +1,90 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using DAL;
+using Model;
+
+namespace BLL
+{
+    public class ProgramBLL
+    {
+
+        public static bool ComparerMail(string mail, string pass,ref User curentUser)
+        {
+            bool retour = false;
+            List<User> l = Connexion.LireUtilisateur();
+            for (int i = 0; i < l.Count; i++)
+            {
+                if (mail == l[i].Couriel && pass == l[i].pass)
+                {
+                    retour = true;
+                    curentUser = l[i];
+                }
+            }
+            return retour;
+        }
+        public static void LireEtAfficherTousLesContact()
+        {
+            List<Contact> l = Connexion.LireContact();
+            foreach (Contact item in l)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        public static void LireEtAfficherTousLesUtilisateurs()
+        {
+            List<User> l = Connexion.LireUtilisateur();
+            foreach (User item in l)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        public static List<Contact> LireEtAfficherTousLesContactSpecific(int idUtilisateur)
+        {
+            List<Contact> l = Connexion.LireContactSpecific(idUtilisateur);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 80d3e93d4c4d8b90efd4b7fd40cf307105b28143
+            return l;
+        }
+
+        public static void AjoutDeLigne(int nbLigne)
+        {
+            Console.WriteLine("\n");
+            for (int i = 0; i < nbLigne; i++)
+            {
+                Console.WriteLine("------------------------------------------------------------------");
+            }
+            Console.WriteLine("\n");
+        }
+        static void Main(string[] args)
+        {
+<<<<<<< HEAD
+            //THIS WORKS....
+=======
+       // THIS WORKS....
+>>>>>>> 80d3e93d4c4d8b90efd4b7fd40cf307105b28143
+            ProgramBLL.LireEtAfficherTousLesUtilisateurs();
+            Console.ReadLine();
+            AjoutDeLigne(2);
+            ProgramBLL.LireEtAfficherTousLesContact();
+            AjoutDeLigne(3);
+            Console.WriteLine("Anto:::");
+            ProgramBLL.LireEtAfficherTousLesContactSpecific(1);
+            AjoutDeLigne(1);
+            Console.WriteLine("ARNOLD:::");
+            ProgramBLL.LireEtAfficherTousLesContactSpecific(2);
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> 80d3e93d4c4d8b90efd4b7fd40cf307105b28143
+            Console.ReadLine();
+        }
+    }
+}
